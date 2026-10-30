@@ -3,9 +3,9 @@ const mineflayer = require('mineflayer');
 function createBot() {
   const bot = mineflayer.createBot({
     host: 'apex53563.progamer.me',
-    port: 25565,                  // تأكد من البورت الخاص بك
+    port: 25565,
     username: 'AFK_Bot_247',
-    version: '26.3'               // تعيين الإصدار الجديد الذي يطلبه السيرفر مباشرة
+    version: '26.3'
   });
 
   bot.on('spawn', () => {
@@ -23,10 +23,6 @@ function createBot() {
     if (bot.entity) {
       bot.look(bot.entity.yaw + 0.1, bot.entity.pitch, true);
     }
-  }, 180000);
-}
-
-createBot();
   }, 180000);
 }
 
