@@ -5,7 +5,8 @@ function createBot() {
     host: 'apex53563.progamer.me', // عنوان سيرفرك
     port: 25565,                  // عدله إن كان لديك بورت مختلف
     username: 'AFK_Bot_247',
-    version: false
+    version: '26.3' 
+    
   });
 
   bot.on('spawn', () => {
