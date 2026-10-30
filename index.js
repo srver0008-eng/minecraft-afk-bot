@@ -5,7 +5,7 @@ function createBot() {
     host: 'apex53563.progamer.me',
     port: 25565,
     username: 'AFK_Bot_247',
-    version: false // ترك المكتبة تتفاوض مع السيرفر تلقائياً لتجنب خطأ الإصدارات الحديثة
+    version: false
   });
 
   bot.on('spawn', () => {
@@ -23,10 +23,6 @@ function createBot() {
     if (bot.entity) {
       bot.look(bot.entity.yaw + 0.1, bot.entity.pitch, true);
     }
-  }, 180000);
-}
-
-createBot();
   }, 180000);
 }
 
